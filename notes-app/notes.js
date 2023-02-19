@@ -54,8 +54,10 @@ const addNote = (title, body) => {
   }
 };
 
-const saveNotes = (notes) =>
-  fs.writeFileSync('notes.json', JSON.stringify(notes));
+const saveNotes = (notes) => {
+  const dataJSON = JSON.stringify(notes);
+  fs.writeFileSync('notes.json', dataJSON);
+};
 
 const loadNotes = () => {
   try {
