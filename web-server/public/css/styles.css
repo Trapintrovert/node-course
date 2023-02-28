@@ -36,6 +36,7 @@ header a {
 .portrait {
   width: 250px;
 }
+
 .main-content {
   flex-grow: 1;
 }
